@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>AI Blog Generator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>AI Blog Generator ✨</h1>
+
+    <p class="subtitle">Generate a 1000-word blog instantly using AI</p>
+
+    <textarea 
+      id="prompt" 
+      placeholder="e.g., Impact of AI in healthcare, Future of education, Benefits of meditation...">
+    </textarea>
+
+    <button id="generateBtn" onclick="generateBlog()">Generate Blog</button>
+
+    <p id="loading"></p>
+
+    <div id="output"></div>
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
