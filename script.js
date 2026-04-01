@@ -45,8 +45,10 @@ async function generateBlog() {
     const blog = data.choices[0].message.content;
 
     output.innerHTML = `
-      <h2 style="color:#444;">Generated Blog</h2>
-      <p>${blog.replace(/\n/g, "<br><br>")}</p>
+      <h2 style="color:#444;">📝 Generated Blog</h2>
+      <div style="margin-top:10px;">
+        ${blog.replace(/\n/g, "<br><br>")}
+      </div>
     `;
 
   } catch (error) {
